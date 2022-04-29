@@ -28,9 +28,9 @@ SECRET_KEY = 'django-insecure-0h1=xghiem81=_3l43u#0&()7#h&=$$_x^y2r&x2*!k4yw^6l(
 # SECRET_KEY = secret_key.key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'https://twitterapisumit.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'twitterAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ciba',
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'ciba',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
