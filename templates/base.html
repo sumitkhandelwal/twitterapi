@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link rel = "stylesheet" href = "//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <style media="screen" type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+    <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('select').material_select();
+        });
+    </script>{% block header %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Sentimental Analysis</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="#29b6f6 light-blue lighten-1">
+            <a href="/" class="brand-logo center">Sentimental Analysis</a></div></nav>
+</header>
+<main>
+    <br>
+    {% block body %}{% endblock %}
+</main>
+<footer class="page-footer" style="!important;padding-top: 0">
+    <div class="footer-copyright">
+        <div class="container">Project Developed By : Sumit Khandelwal
+            <a class="grey-text text-lighten-4 right" href="https://github.com/sumitkhandelwal">Github Link</a></div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.show {
+    opacity :1;
+    display: block;
+}
+
+.hide{
+    opacity: 0;
+    display: none;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
