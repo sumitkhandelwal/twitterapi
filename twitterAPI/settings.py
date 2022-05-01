@@ -30,8 +30,8 @@ SECRET_KEY = 'django-insecure-0h1=xghiem81=_3l43u#0&()7#h&=$$_x^y2r&x2*!k4yw^6l(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['twitterapisumit.herokuapp.com']
-
+ALLOWED_HOSTS = ['*']
+#'twitterapisumit.herokuapp.com'
 
 # Application definition
 
