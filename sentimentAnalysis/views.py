@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
 from .forms import userinput
-#import secrets as sec
 import tweepy
 from textblob import TextBlob
 
@@ -47,11 +46,6 @@ def primary(input_hashtag):
             sentiment.append('Positive')
 
     tweetData = zip(tweetData, sentiment)
-
-    # print "Total tweets",N
-    # print "Positive ",float(pos_count/N)*100,"%"
-    # print "Negative ",float(neg_count/N)*100,"%"
-    # print "Neutral ",float(neutral_count/N)*100,"%"
     return [['Sentiment', 'no. of tweets'],['Positive',pos_count]
             ,['Neutral',neutral_count],['Negative',neg_count]], tweetData
 
